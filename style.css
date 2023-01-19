@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 body{
     font-family: 'Montserrat', sans-serif;
-
 }
+
+ /* Navigation Menu style start */
 .container{
     display: flex;
    justify-content: space-around;
@@ -29,13 +29,40 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
+ /* Navigation Menu style end */
 
-
+ /* Header style start */
+.header{
+    margin-top: 2em;
+    text-align: center;
+}
+.header-info h1{
+    font-size: 35px;
+    margin-bottom: 0.5em;
+}
+.header-info p{
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+.header-img img{
+    width: 70%;
+}
+.explore-btn{
+    background-color: #FF900E;
+    color: #fff;
+    border-style: none;
+    padding: 1em 1.5em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ /* Header style end */
 
 /* Responsive  */
 /* Mobile Devices */
 @media only screen and (max-width:576px) {
 
+     /* Navigation Menu responsive style start */ 
     .container{
         display: flex;
         flex-direction: column;
@@ -44,4 +71,5 @@ body{
         display: flex;
         flex-direction: column;
     }
+      /* Navigation Menu responsive style end */ 
 }
