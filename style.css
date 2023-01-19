@@ -137,8 +137,97 @@ body{
     font-size: 35px;
     font-weight: bold;
  }
+ .facts-section{
+    padding-left: 2em;
+    margin-bottom: 2em;
+
+ }
+ .facts-section p{
+    font-weight: bold;
+
+ }
+.facts-list{
+    display: flex;
+    justify-content: space-around;
+
+}
+.fact{
+    border: 1px solid #FF900E;
+    border-radius: 4px;
+    padding: 1.5em;
+    margin-top: 1em;
+}
 
 
+/* animation */
+.fact {
+    width: 200px;
+    height: 150px;
+    box-shadow: 16px 14px 20px #b48d8d8c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fact::before{
+    content: "";
+    background-image: conic-gradient(
+        #cc6b8a 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+.fact::after{
+    
+    width: 190px;
+    height: 190px;
+    background: #101010;
+    position: absolute;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.sponsors-section{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
+.sponsors-lists{
+    display: grid;
+grid-template-columns: repeat(5, 1fr) ;
+margin-top: 2em;
+}
+
+footer{
+    width: 80%;
+    height: 100px;
+    background-color: #FFF4E7;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 5em;
+}
+.footer{
+    margin-top: 2em;
+    padding-top: 2.2em;
+}
  /* main section style end */
 
 
@@ -182,4 +271,13 @@ body{
         bottom: 0;
         left: 10px;
       }
+      .facts-list{
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+      }
+      .sponsors-lists{
+        display: grid;
+    grid-template-columns: repeat(1, 1fr) ;
+    margin-top: 3em;
+    }
 }
